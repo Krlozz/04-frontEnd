@@ -25,11 +25,19 @@
         }
 
         /* Mediante clases */
-        .border-cafe{
+        .borde-cafe{
             border-color: brown;
         }
-        .border-azul{
+        .borde-azul{
             border-color: blue;
+        }
+
+        .rojo {
+            color: red;
+        }
+
+        .verde {
+            color: green;
         }
 
     </style>
@@ -42,11 +50,26 @@
         console.log(15 + 20);
     </script>
 
+    <script src="js/inicio.js"></script>
+
+
+
 </head>
 <body>
 
+<h1>javascript</h1>
+<img id="imagen"
+     src="https://blog.game.es/wp-content/uploads/2018/02/d5999597a2e18ca0b5702fc18a71df5e.jpg"
+     alt="Dragon">
+<button onclick="cambiarImagen()"> Cambiar Imagen </button>
+
 <h2>Tablas</h2>
-<table id="tablita" class="borde-cafe" style="border-color: green ">
+<table id="tablita"
+       class="borde-cafe"
+       style="
+       border-color: greenyellow;
+       color: red;"
+>
     <tr>
         <th>Nombre</th>
         <th>Apellido</th>
@@ -63,9 +86,11 @@
         <td>22</td>
     </tr>
 </table>
+<button onclick="cambiarColorTabla()"> Color tabla </button>
+
 
 <h2>Tabla 2</h2>
-<table class="border-azul">
+<table class="rojo verde borde-azul  ">
     <tr>
         <th>Nombre</th>
         <th>Apellido</th>
@@ -83,7 +108,7 @@
     </tr>
 </table>
 
-
+<script src="js/inicio.js"></script>
 
 </body>
 </html>
