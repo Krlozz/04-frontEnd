@@ -18,7 +18,16 @@ function cambiarColorTabla() {
     //const colorTabla: any = document.getElementById('tablita').style.borderColor = "yellow";
     const colorTabla: any = document.getElementById('tablita');
     colorTabla.className = colorTabla.class + ' borde-azul'
+}
 
+function crearContenido() {
+    const etiquetaContenedora = document.getElementById('contenido');
+    const parrafo = document.createElement("p");
+    parrafo.innerHTML = 'Hola amigos';
+    const imagen = document.createElement("img");
+    imagen.src = carlos.urlImagen;
 
+    etiquetaContenedora.appendChild(parrafo);
+    etiquetaContenedora.appendChild(imagen);
 }
 

@@ -17,3 +17,12 @@ function cambiarColorTabla() {
     var colorTabla = document.getElementById('tablita');
     colorTabla.className = colorTabla.class + ' borde-azul';
 }
+function crearContenido() {
+    var etiquetaContenedora = document.getElementById('contenido');
+    var parrafo = document.createElement("p");
+    parrafo.innerHTML = 'Hola amigos';
+    var imagen = document.createElement("img");
+    imagen.src = carlos.urlImagen;
+    etiquetaContenedora.appendChild(parrafo);
+    etiquetaContenedora.appendChild(imagen);
+}
