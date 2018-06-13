@@ -2,9 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Estilos</title>
+    <style>  /* ESTILOS CSS */
+        /* Mediante ID */
+        #tablita{
+            /* proiedad: valorDeLaPropiedad; */
+            border-style: solid;
+            border-width: 4px;
+            border-color: #000;
+        }
+
+        /* Mediante etiquetas */
+        table {
+            border-style: solid;
+            border-width: 1px;
+        }
+
+        td, th {
+            border-style: solid;
+            border-width: 1px;
+            border-color: brown;
+        }
+
+        /* Mediante clases */
+        .border-cafe{
+            border-color: brown;
+        }
+        .border-azul{
+            border-color: blue;
+        }
+
+    </style>
 </head>
 <body>
+
+<h2>Tablas</h2>
+<table id="tablita" class="borde-cafe" style="border-color: green ">
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+    </tr>
+    <tr>
+        <td>Carlos</td>
+        <td>Ayala</td>
+        <td>22</td>
+    </tr>
+    <tr>
+        <td>Carlos adasd sdfsd ff sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf s dff sdf dsf sd</td>
+        <td>Ayala</td>
+        <td>22</td>
+    </tr>
+</table>
+
+<h2>Tabla 2</h2>
+<table class="border-azul">
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+    </tr>
+    <tr>
+        <td>Carlos</td>
+        <td>Ayala</td>
+        <td>22</td>
+    </tr>
+    <tr>
+        <td>Carlos adasd sdfsd ff sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf s dff sdf dsf sd</td>
+        <td>Ayala</td>
+        <td>22</td>
+    </tr>
+</table>
+
+
 
 </body>
 </html>
